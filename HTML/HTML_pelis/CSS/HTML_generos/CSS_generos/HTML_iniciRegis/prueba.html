@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS_iniciRegis/estilosInicio.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <span>BIENVENIDOS A </span>MOOT <br>
+        <img src="Imagenes/LOGO2-1.png" alt="">
+    </header>
+
+    <div class="container">
+        <h2>Inicie sesión con una de las siguientes opciones:</h2>
+        <div class="login-items">
+            <a href="#" class="goo"><i class="fa-brands fa-google"></i> Continuar con Google</a>
+            <a href="#" class="tw"><i class="fab fa-twitter"></i> Continuar con Twitter</a>
+            <a href="#" class="mcr"><i class="fa-brands fa-microsoft"></i> Continuar con Microsoft</a>
+            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i> Continuar con Facebook</a>
+            <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fa-solid fa-dragon"></i> Continuar con Cuenta</button>
+        </div>
+
+        <a href="Registro.html" class="register">
+            <span>No tienes una cuenta</span> <u><b>Registrate aquí</b></u>
+        </a>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Iniciar Sesión en Moot</h3>
+            <h4>Introduzca su dirección de correo electrónico y contraseña.</h4>
+            <form action="registrar.php" method="post">
+
+                <div class="contenedor-inputs">
+                    <div class="input-f">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="txtEmail_i" id="txtEmail_i" placeholder="Correo Electrónico" required>
+                    </div>
+                    
+                    <div class="input-f">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="txtClave_i" id="txtClave_i" placeholder="Contraseña" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <i class="fa-solid fa-dragon"></i>
+                    <input type="submit" name="btnIngresar" id="btnIngresar" value="Iniciar Sesión">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="CSS_iniciRegis/JS_popPup/popup.js"></script>
+</body>
+</html>

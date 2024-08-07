@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --verde: #753526;
+    --limon: #FF7152;
+    --anaranjado2: #634D3E;
+
+    --degradado: linear-gradient(90deg, var(--limon), var(--verde))
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background: black;*/
+    /*box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);*/
+    padding: 1rem 8%;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    font-size: 4rem;
+    color: var(--verde);
+    
+}
+
+header span{    
+    color: var(--limon);
+    z-index: 1;
+   
+}
+
+
+img{
+    width: 8%;
+    height: 8%;
+}
+
+/*-------------------------*/
+/*Contenedor de Opciones de logeo-Registro*/
+/*-------------------------*/
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.container {
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+}
+   
+.container h2{
+    color: #666;
+    margin-bottom: 1rem;   
+} 
+
+.container .login-items{
+    width: 100%;
+}
+
+.container .login-items a,
+.container .login-items button{
+    display: block;
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 1.5rem;
+    cursor: pointer;
+    position: relative; 
+}
+
+.container .login-items a i,
+.container .login-items button i{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container .fb{
+    background: #3b5999;
+}
+
+.container .tw{
+    background: #55acef;
+}
+
+.container .mcr{
+    background: #333;
+}
+
+.container .goo{
+    background:  #E3312B;
+}
+
+.container .cu{
+    background: #FF7152;
+}
+
+.container button{
+    background: #FF7152;
+}
+
+.container .fb,
+.container .tw,
+.container .mcr,
+.container .goo,
+.container .cu,
+.container .btn-abrir-popup{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 1.2rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.container .fb:hover,
+.container .tw:hover,
+.container .mcr:hover,
+.container .goo:hover,
+.container .cu:hover,
+.container .btn-abrir-popup:hover{
+    transform: scale(105%);
+}
+
+.container .register{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.container span{
+    color: whitesmoke;
+}
+
+/*----------------------*/
+/*POP UP*/
+/*----------------------*/
+
+.overlay {
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.overlay .popup {
+	background: #333;
+	box-shadow: 0 0 0.3rem 0 rgba(0,0,0,0.3);
+	border-radius: 1.3rem;
+	padding: 1.2rem;
+	text-align: center;
+	width: 50rem;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: whitesmoke;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+    padding-bottom: 2rem;
+    color: var(--limon);
+	font-size: 3.5rem;
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+	opacity: 0;
+}
+
+.popup h4 {
+    color: whitesmoke;
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-bottom: 2.5rem;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+    width: 90%;
+    border: none;
+    background: none;
+    color: whitesmoke;
+}
+
+.popup .contenedor-inputs .input-f{
+    width: 100%;
+	margin-bottom: 1.3rem;
+	height: 3.9rem;
+	font-size: 1.7rem;
+	line-height: 3.25rem;
+	border: 0.125rem solid #F09971;
+    border-radius: 1.5rem;
+    color: whitesmoke;
+}
+
+.popup form .btn-submit {
+    margin-top: 3rem;
+	padding: 0 0rem;
+	height: 3.8rem;
+	line-height: 2.5rem;
+	border: none;
+	color: whitesmoke;
+	background: var(--degradado);
+	border-radius: 1.5rem;
+	font-size: 1.7rem;
+	cursor: pointer;
+	transition: .2s ease all;
+    justify-content: center;
+}
+
+.popup form .btn-submit input{
+    width: 100%;
+    font-size: 1.7rem;
+    padding-top: .6rem;
+    color: whitesmoke;
+    background: none;
+    border: none;
+}
+
+.popup form .btn-submit:hover{
+	background: rgba(158, 45, 7, 0.9);
+}
+
+
+/*-------------------------*/
+/*ANIMACIONES DEL POP UP*/
+/*-------------------------*/
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:800px){
+    .container{
+        width: 70%;
+        padding: 0rem;
+    }
+    header img{
+        width: 13%;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .container .login-items{
+        font-size: .5rem;
+    }
+}

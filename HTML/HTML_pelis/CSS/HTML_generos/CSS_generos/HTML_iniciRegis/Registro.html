@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS_iniciRegis/estilosInicio.css">
+
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+
+
+        <span>BIENVENIDOS A </span>MOOT <br>
+        <img src="Imagenes/LOGO2-1.png" alt="">
+
+
+    </header>
+
+    <div class="container">
+        <h2>Registrate con una de las siguientes opciones:</h2>
+        <div class="login-items">
+            <a href="#" class="goo"><i class="fa-brands fa-google"></i> Acceder con Google</a>
+            <a href="#" class="tw"><i class="fab fa-twitter"></i> Acceder con Twitter</a>
+            <a href="#" class="mcr"><i class="fa-brands fa-microsoft"></i> Acceder con Microsoft</a>
+            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i> Acceder con Facebook</a>
+            <button id="btn-abrir-popup" class="btn-abrir-popup"><i class="fa-solid fa-dragon"></i> Acceder con
+                Cuenta</button>
+        </div>
+
+        <a href="InicioSesion.html" class="register">
+            <span>Ya tienes una cuenta</span> <u><b>Inicia Sesión aquí</b></u>
+        </a>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Registrarse en Moot</h3>
+            <h4>Complete los datos para Registrarse</h4>
+
+            <form action="PHP_BD/registrar.php" method="post">
+
+
+                <div class="contenedor-inputs">
+
+                    <div class="input-f">
+                        <i class="fa-solid fa-dragon"></i>
+                        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombres y Apellidos" required>
+                    </div>
+
+                    <div class="input-f">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="txtUser" id="txtUser" placeholder="Nombre de Usuario" required>
+                    </div>
+
+                    <div class="input-f">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="Correo Electrónico" required>
+                    </div>
+
+                    <div class="input-f">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="txtClave" id="txtClave" placeholder="Contraseña" required>
+                    </div>
+
+                    <div class="input-f">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="txtClaveR" id="txtClaveR" placeholder="Repita Contraseña" required>
+                    </div>
+
+                </div>
+
+                <div class="btn-submit">
+                    <input type="submit" name="btnRegistrar" id="btnRegistrar" value="Registrarse">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="CSS_iniciRegis/JS_popPup/popup.js"></script>
+    <script src="CSS_iniciRegis\JS_particulas\particles.min.js"></script>
+    <script src="CSS_iniciRegis/JS_particulas/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de MOOT</title>
+    <link rel="stylesheet" href="HTML_pelis/CSS/estilosInfo.css">
+    <script src="https://kit.fontawesome.com/a75040fded.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="HTML_pelis/CSS\HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/LOGO2-1.png" alt="">
+            <span>MO</span>OT
+
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+
+        <nav class="navbar">
+            <a href="Coment_Pelis.html"><i class="fa-solid fa-clapperboard"></i> Peliculas</a>
+            <a href="Coment_Series.html"><i class="fa-solid fa-clapperboard"></i> Series</a>
+            <a href="Noticias.html"><i class="fa-solid fa-newspaper"></i> Noticias</a>
+            <a href="#"><i class="fa-solid fa-people-group"></i> Debates</a>
+            <a href="Recomend.html"><i class="fa-solid fa-list-check"></i> Recomendaciones</a>
+            <a href="HTML_pelis\CSS\HTML_generos\CSS_generos\HTML_iniciRegis\Registro.html"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+        </nav>
+    </header>
+
+    <!--slider-->
+    <div class="slider">
+        <div class="slides">
+            <!--botones-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--imagenes-->
+            <div class="slide first">
+                <img src="HTML_pelis/CSS\HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/TE5.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="HTML_pelis/CSS\HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/TE1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="HTML_pelis/CSS\HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/TE4.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="HTML_pelis/CSS\HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/TE2.jpg" alt="">
+            </div>
+
+            <!--navegacion automatica-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <!--navegacion manual-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <!--Script para navegacion-->
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
+
+    <div class="footer">
+        <div class="caja-contenedor">
+
+            <div class="caja">
+                <div class="info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>123-456-789 <br> 2237-3443-33</p>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>fernando231@hotmail.com <br> moot@hotmail.com</p>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Ica, Ica Perú<br> 10100</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <h1 class="creditos">
+            Moot Copyright&#169 2022
+        </h1>
+    </div>
+</body>
+</html>

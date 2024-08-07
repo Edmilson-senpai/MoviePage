@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="HTML\HTML_pelis/CSS\estiloIndex.css">
+    <script type="text/javascript" src="HTML\HTML_pelis\CSS\JS\ventanaAlertas.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/a75040fded.js" crossorigin="anonymous"></script>
+</head> 
+<body> 
+    <!-- BARRA DE NAVEGACION -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HTML/HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/LOGO2-1.png" alt="">
+            <span>MO</span>OT
+            
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+
+        <nav class="navbar">
+            <a href="HTML\Coment_Pelis.html"><i class="fa-solid fa-clapperboard"></i> Peliculas</a>
+            <a href="HTML\Coment_Series.html"><i class="fa-solid fa-clapperboard"></i> Series</a>
+            <a href="HTML\Noticias.html"><i class="fa-solid fa-newspaper"></i> Noticias</a>
+            <a href="#"><i class="fa-solid fa-people-group"></i> Debates</a>
+            <a href="HTML\Recomend.html"><i class="fa-solid fa-list-check"></i> Recomendaciones</a>
+            <a onclick="return confirmacion();"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+
+    <section class="inicio">
+        <div class="content">
+            <h3>Se parte de esta <span>familia</span></h3>
+            <p>En este espacio podras compartir tus opiniones y criticas sobre las peliculas y series. Obtendras informacion sobre tus peliculas y series favoritas. Ademas, podras encontrar las criticas de otros parsonas e interacturar con ellas y divertirte en el proceso</p>
+            <a onclick="return confirmacion();" class="btn"><i class="fa-solid fa-user"></i> SUSCRIBIRSE</a>
+        </div>
+
+        <div class="image">
+            <img src="HTML/HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/deadpool-movible.png" alt="">
+        </div>
+    </section>
+
+    <!-- CUERPO MAS INFORMACION -->
+
+    <section class="historia">
+        <h1 class="heading">Historia de la pagina</h1>
+        <div class="columna">
+            <div class="image">
+                <img src="HTML/HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/minion-saludo.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Motivo de creación de la pagina</h3>
+                <p>Este proyecto inicio como parte de un trabajo grupal como parte del curso Taller de programacion Web...</p>
+
+                <div class="buttons">
+                    <a href="HTML\Info.html" class="btn"><i class="fa-solid fa-hand-pointer"></i> VER DATALLES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUERPO PELICULAS -->
+
+    <section class="estrenos">
+        <h1 class="heading"> ESTRENOS</h1>
+        <div class="caja-contenedor">
+            <div class="pelicula">
+                <img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/DocStrange.jpg" alt="" />
+                <h3>Doctor Strange in the Multiverse of Madness</h3>
+                <p>Unos meses después de los eventos de Spider-Man: No Way Home (2021), Dr. Stephen Strange, con la ayuda de 
+                    viejos y nuevos aliados místicos, viaja al multiverso para enfrentarse a un nuevo y misterioso adversario.
+                </p>
+                <a href="HTML\HTML_pelis\DoctorStrange2.html" class="btn"><i class="fa-solid fa-angles-right"></i> VER MAS</a>
+            </div>
+            <div class="pelicula">
+                <img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/jujutsuKaisen0.jpg" alt="" />
+                <h3>Jujutsu Kaisen 0: La Pelicula</h3>
+                <p>Yuuta Okkotsu está embrujado. Desde que su amiga de la infancia, Rika, murió en un accidente de tráfico, 
+                    su fantasma se ha quedado con él. Pero su espíritu no aparece como la dulce chica que Yuuta conoció una vez.
+                    En cambio, se manifiesta como una entidad monstruosa y poderosa que lo protege ferozmente.
+                </p>
+                <a href="HTML\HTML_pelis\JujutsuKaisen0.html" class="btn"><i class="fa-solid fa-angles-right"></i> VER MAS</a>
+            </div>
+            <div class="pelicula">
+                <img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/jurassicWorld.jpg" alt="" />
+                <h3>Jurassic World Dominion</h3>
+                <p>Esta nueva entrega transcurre cuatro años después de la destrucción de Isla Nublar vista en Jurassic World: El reino caído.
+                    Ahora, los dinosaurios conviven con los seres humanos en todo el mundo. Este frágil equilibrio cambiará el futuro y decidirá, 
+                    de una vez por todas, si las personas seguirán siendo los principales depredadores en un planeta que comparten con los animales más temibles de la creación.
+                </p>
+                <a href="HTML\HTML_pelis\Jurassick3.html" class="btn"><i class="fa-solid fa-angles-right"></i> VER MAS</a>
+            </div>
+            <div class="pelicula">
+                <img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/avatar.jpg" alt="" />
+                <h3>Avatar: The Way of Water</h3>
+                <p>Varios años después de los sucesos ocurridos en Avatar (2009), volvemos a Pandora donde Jake Sully (Sam Worthington) y Neytiri 
+                    (Zoe Saldana) han formado una familia. La pareja formada por el ex-humano amigo de los Na'vi y la hija del anterior jefe del clan,
+                    además de sus hijos, viajarán más allá de los bosques de Pandora a entornos subacuáticos y volcánicos.
+                </p>
+                <a href="HTML\HTML_pelis\Avatar2.html" class="btn"><i class="fa-solid fa-angles-right"></i> VER MAS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POSIBLEMENTE SALGA -->
+    
+    <!--
+    <div class="suscribete">
+        <h3>Suscribete para tener mas novedades</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit laborum sapiente, beatae perferendis atque ad? Unde aliquid provident aspernatur minima libero nam dolore nesciunt labore dignissimos necessitatibus? Ipsam, omnis exercitationem!</p>
+        <form action="">
+            <input type="email" placeholder="Ingresa tu email">
+            <input type="submit" value="Suscribete">
+        </form>
+    </div>
+     -->
+
+    
+    <div class="slider-container">
+        <div class="slider position"></div>
+    </div>
+
+    <!-- REDES SOCIALES -->
+
+    <div class="redes-sociales">
+        <h1 class="heading">Redes Sociales</h1>
+        <div class="links">
+            <a href="https://www.facebook.com/"><img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/facebook.png" alt="Facebook"><p class="sofa"></p></a>
+            <a href="#" ><img  src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/whatsapp.png" alt="WhatsApp"><p class="sowhat"></p></a>
+            <a href="https://www.instagram.com"><img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/instagram.png" alt="Instagram"><p class="soins"></p></a>
+            <a href="https://twitter.com/"><img src="HTML\HTML_pelis/CSS/HTML_generos/CSS_generos/HTML_iniciRegis/Imagenes/gorjeo.png" alt="Twitter"><p class="sotwi"></p></a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <div class="caja-contenedor">
+            
+            <div class="caja">
+                <div class="info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>123-456-789 <br> 2237-3443-33</p>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>fernando231@hotmail.com <br> moot@hotmail.com</p>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Ica, Ica Perú<br> 10100</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="creditos">
+            Moot Copyright&#169 2022
+        </h1>
+    </div>
+    
+</body>
+</html>
